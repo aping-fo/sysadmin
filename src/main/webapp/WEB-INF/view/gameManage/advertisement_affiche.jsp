@@ -129,10 +129,10 @@
 	<script type="text/javascript">
 		//获取键盘输入的字数，动态改变
 		function changeInfo(){
-			document.getElementById("count").innerHTML=document.getElementById("AdvertisingContent").value.length+"/50";
+			document.getElementById("count").innerHTML=document.getElementById("content").value.length+"/50";
 		}
-		$("#AdvertisingContent").keyup(function(){
-			if($("#AdvertisingContent").val().length>50){
+		$("#content").keyup(function(){
+			if($("#content").val().length>50){
 			layer.msg("字数超过限制")
 		}
 		});
